@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" style="-fx-background-color: #64d2c8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="378.0" layoutY="233.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #232d40; -fx-background-radius: 100PX;">
+            <children>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/filter_icon.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="nightsFilterButton" layoutY="3.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="64.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX;" textFill="WHITE">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="220.0" prefWidth="1250.0" style="-fx-background-color: #232d40;">
+            <children>
+                <Label layoutX="450.0" layoutY="73.0" text="Select customer" textFill="WHITE">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="64.0" fitWidth="67.0" layoutX="97.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/baseline_arrow_back_white_48dp.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="backButton" layoutX="70.0" layoutY="51.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <HBox layoutX="66.0" layoutY="240.0" prefHeight="42.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfNumOfNights" prefHeight="49.0" prefWidth="266.0" promptText="Number of nights" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" layoutX="66.0" layoutY="332.0" prefHeight="486.0" prefWidth="1116.0">
+            <columns>
+                <TableColumn fx:id="columnIdCard" prefWidth="93.60000610351562" text="ID Card" />
+                <TableColumn fx:id="columnFirstName" prefWidth="218.40003967285156" text="First Name" />
+                <TableColumn fx:id="columnLastName" prefWidth="232.00003051757812" text="Last Name" />
+                <TableColumn fx:id="columnPhone" prefWidth="186.4000244140625" text="Phone" />
+                <TableColumn fx:id="columnMail" prefWidth="186.40008544921875" text="Mail" />
+                <TableColumn fx:id="columnNumOfNights" prefWidth="201.5999755859375" text="Number of booked nights" />
+            </columns>
+        </TableView>
+        <Button fx:id="extendStayButton" layoutX="935.0" layoutY="236.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="176.0" style="-fx-background-color: #232d40;" text="Extend Stay" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

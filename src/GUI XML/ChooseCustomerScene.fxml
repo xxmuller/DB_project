@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" style="-fx-background-color: #64d2c8;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="369.0" layoutY="233.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #232d40; -fx-background-radius: 100PX;">
+            <children>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/filter_icon.png" />
+                    </image>
+                </ImageView>
+              <Button fx:id="idCardFilterButton" layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX;" textFill="WHITE">
+                  <font>
+                      <Font size="23.0" />
+                  </font>
+              </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="220.0" prefWidth="1250.0" style="-fx-background-color: #232d40;">
+            <children>
+                <Label layoutX="534.0" layoutY="73.0" text="Booking" textFill="WHITE">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="64.0" fitWidth="67.0" layoutX="97.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/baseline_arrow_back_white_48dp.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="backButton" layoutX="70.0" layoutY="51.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Button fx:id="addCustomerButton" layoutX="940.0" layoutY="234.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Add Customer" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button fx:id="payForBookingButton" layoutX="640.0" layoutY="234.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Pay for Booking" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <HBox layoutX="66.0" layoutY="240.0" prefHeight="42.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="textFieldIdCard" prefHeight="49.0" prefWidth="266.0" promptText="ID Card" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" layoutX="66.0" layoutY="332.0" prefHeight="482.0" prefWidth="1106.0">
+            <columns>
+                <TableColumn fx:id="columnId" prefWidth="115.99999237060547" text="ID" />
+                <TableColumn fx:id="columnIdCard" prefWidth="184.0" text="IdCard" />
+                <TableColumn fx:id="columnFirstName" prefWidth="201.80001831054688" text="First Name" />
+                <TableColumn fx:id="columnLastName" prefWidth="182.79998779296875" text="Last Name" />
+                <TableColumn fx:id="columnPhone" prefWidth="201.199951171875" text="Phone" />
+                <TableColumn fx:id="columnMail" prefWidth="221.20001220703125" text="Mail" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

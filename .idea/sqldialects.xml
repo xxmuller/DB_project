@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/Database/WorkWithDB.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/AddEmployeesController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/CustomerDetailInfoController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/ManageChosenHotelController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/ManageHotelCustomersController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/ManageHotelRoomsController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/ManageHotelsController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/GUI/RoomDetailInfoController.java" dialect="GenericSQL" />
+  </component>
+</project>

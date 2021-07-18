@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="229.0" layoutY="30.0" text="Payment">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="338.0" layoutY="96.0" prefHeight="75.0" prefWidth="244.0">
+         <children>
+            <Label fx:id="numOfNightsLabel" layoutX="20.0" layoutY="33.0" prefHeight="34.0" prefWidth="215.0" text="Num of nights">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="56.0" layoutY="120.0" prefHeight="52.0" prefWidth="231.0" style="-fx-border-width: 0PX 0PX 1.5PX 0PX; -fx-border-color: black;">
+         <children>
+            <TextField fx:id="tfPaymentType" prefHeight="50.0" prefWidth="250.0" promptText="Payment type" style="-fx-background-color: transparent; -fx-prompt-text-fill: black; -fx-text-fill: black;">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="344.0" layoutY="120.0" prefHeight="52.0" prefWidth="231.0" style="-fx-border-width: 0PX 0PX 1.5PX 0PX; -fx-border-color: black;">
+         <children>
+            <TextField fx:id="tfNumOfNights" prefHeight="50.0" prefWidth="250.0" promptText="Number of nights" style="-fx-background-color: transparent; -fx-prompt-text-fill: black; -fx-text-fill: black;">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Label fx:id="priceLabel" layoutX="237.0" layoutY="197.0" text="Total price = 0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="payButton" layoutX="194.0" layoutY="270.0" mnemonicParsing="false" onAction="#payButtonClicked" prefHeight="26.0" prefWidth="86.0" text="Pay">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="355.0" layoutY="270.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="31.0" prefWidth="86.0" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

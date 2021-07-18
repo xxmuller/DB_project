@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" style="-fx-background-color: #64d2c8;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="220.0" prefWidth="1250.0" style="-fx-background-color: #232d40;">
+            <children>
+                <Label layoutX="377.0" layoutY="70.0" text="Adding new employee" textFill="WHITE">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="64.0" fitWidth="67.0" layoutX="97.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/baseline_arrow_back_white_48dp.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="backButton" layoutX="72.0" layoutY="55.0" mnemonicParsing="false" prefHeight="109.0" prefWidth="113.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <HBox layoutX="61.0" layoutY="256.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfFirstName" prefHeight="50.0" prefWidth="261.0" promptText="First Name" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="491.0" layoutY="256.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfLastName" prefHeight="50.0" prefWidth="257.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="61.0" layoutY="357.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfPhone" prefHeight="50.0" prefWidth="254.0" promptText="Phone" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="899.0" layoutY="256.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfMail" prefHeight="50.0" prefWidth="261.0" promptText="Mail" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="899.0" layoutY="567.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfSalary" prefHeight="50.0" prefWidth="257.0" promptText="Salary" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <Button fx:id="addEmployeeButton" layoutX="530.0" layoutY="664.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="187.0" style="-fx-background-color: #232d40;" text="Add Employee" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <HBox layoutX="61.0" layoutY="567.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfDateFrom" prefHeight="50.0" prefWidth="262.0" promptText="Date From" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="491.0" layoutY="567.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfDateTo" prefHeight="50.0" prefWidth="262.0" promptText="Date To" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <MenuButton fx:id="chooseRoleMenu" layoutX="938.0" layoutY="664.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="187.0" style="-fx-background-color: #232d40;" text="Role" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </MenuButton>
+        <HBox layoutX="491.0" layoutY="357.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfCity" prefHeight="50.0" prefWidth="260.0" promptText="City" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="899.0" layoutY="357.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfCountry" prefHeight="50.0" prefWidth="265.0" promptText="Country" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="61.0" layoutY="462.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfStreet" prefHeight="50.0" prefWidth="262.0" promptText="Street" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="492.0" layoutY="462.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfHouseNum" prefHeight="50.0" prefWidth="255.0" promptText="House number" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="899.0" layoutY="462.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfPostalCode" prefHeight="50.0" prefWidth="262.0" promptText="Postal code" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

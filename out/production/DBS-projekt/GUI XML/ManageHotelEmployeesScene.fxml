@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" style="-fx-background-color: #64d2c8;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <AnchorPane layoutX="639.0" layoutY="233.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #232d40; -fx-background-radius: 100PX;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/filter_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+        <Button fx:id="roleFilterButton" layoutX="639.0" layoutY="233.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX;" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <AnchorPane prefHeight="220.0" prefWidth="1250.0" style="-fx-background-color: #232d40;">
+            <children>
+                <Label layoutX="383.0" layoutY="73.0" text="Manage Hotel Employees" textFill="WHITE">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="64.0" fitWidth="67.0" layoutX="97.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/baseline_arrow_back_white_48dp.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="backButton" layoutX="70.0" layoutY="51.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Button fx:id="detailInfoButton" layoutX="920.0" layoutY="380.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Detail Info" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button fx:id="sumSalaryByRoleButton" layoutX="920.0" layoutY="280.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Salary sum by Role" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button fx:id="addEmployeeButton" layoutX="920.0" layoutY="480.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Add Employee" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button fx:id="deleteEmployeeButton" layoutX="920.0" layoutY="580.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Delete Employee" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button fx:id="employeeTableButton" layoutX="920.0" layoutY="679.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="231.0" style="-fx-background-color: #232d40;" text="Employee table" textFill="WHITE" visible="false">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <MenuButton fx:id="chooseRoleMenu" layoutX="90.0" layoutY="241.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="207.0" style="-fx-background-color: #232d40;" text="Role" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </MenuButton>
+        <HBox layoutX="350.0" layoutY="234.0" prefHeight="64.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="textFieldSalary" prefHeight="65.0" prefWidth="270.0" promptText="Salary" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" layoutX="66.0" layoutY="332.0" prefHeight="487.0" prefWidth="834.0">
+            <columns>
+                <TableColumn fx:id="columnId" prefWidth="88.00000762939453" text="ID" />
+                <TableColumn fx:id="columnFirstName" prefWidth="212.79998779296875" text="First Name" />
+                <TableColumn fx:id="columnLastName" prefWidth="219.19998168945312" text="Last Name" />
+                <TableColumn fx:id="columnSalary" prefWidth="153.60003662109375" text="Salary" />
+                <TableColumn fx:id="columnRole" prefWidth="159.99993896484375" text="Role" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tableSumSalaryByRole" layoutX="66.0" layoutY="332.0" prefHeight="487.0" prefWidth="834.0" visible="false">
+            <columns>
+                <TableColumn fx:id="columnRoleSalary" prefWidth="173.79998779296875" text="Role" />
+                <TableColumn fx:id="columnTotalEmployeesSalary" prefWidth="211.0" text="Total Employees" />
+                <TableColumn fx:id="columnSumSalary" prefWidth="211.0" text="Salary Sum" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

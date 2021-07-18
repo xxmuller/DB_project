@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" style="-fx-background-color: #64d2c8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="220.0" prefWidth="1250.0" style="-fx-background-color: #232d40;">
+            <children>
+                <Label layoutX="385.0" layoutY="73.0" text="Adding room to hotel" textFill="WHITE">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Label>
+                <Button fx:id="beginButton" layoutX="1009.0" layoutY="67.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Button>
+            <ImageView fitHeight="64.0" fitWidth="67.0" layoutX="97.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/baseline_arrow_back_white_48dp.png" />
+               </image>
+            </ImageView>
+                <Button fx:id="backButton" layoutX="70.0" layoutY="51.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                   <font>
+                      <Font name="System Bold" size="19.0" />
+                   </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <HBox layoutX="39.0" layoutY="272.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+         <children>
+                <TextField fx:id="tfRoomNumber" prefHeight="50.0" prefWidth="248.0" promptText="Room number" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+         </children></HBox>
+        <HBox layoutX="39.0" layoutY="373.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfNumberOfBeds" prefHeight="50.0" prefWidth="227.0" promptText="Number of beds" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="38.0" layoutY="484.0" prefHeight="46.0" prefWidth="266.0" style="-fx-border-width: 0px 0px 1.5px 0px; -fx-border-color: white;">
+            <children>
+                <TextField fx:id="tfPriceForOneNight" prefHeight="50.0" prefWidth="226.0" promptText="Price for one night" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <Button fx:id="addRoomButton" layoutX="78.0" layoutY="588.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="187.0" style="-fx-background-color: #232d40;" text="Add Room" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+      <TableView fx:id="tableView" layoutX="368.0" layoutY="247.0" prefHeight="474.0" prefWidth="739.0">
+        <columns>
+            <TableColumn fx:id="columnId" prefWidth="70.60003662109375" text="ID" />
+            <TableColumn fx:id="columnFirstName" prefWidth="118.20001220703125" text="First Name" />
+            <TableColumn fx:id="columnLastName" prefWidth="119.79998779296875" text="Last Name" />
+            <TableColumn fx:id="columnSalary" prefWidth="113.79998779296875" text="Salary" />
+            <TableColumn fx:id="columnRole" prefWidth="143.0" text="Role" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="233.0" layoutY="752.0" prefHeight="64.0" prefWidth="187.0" style="-fx-background-radius: 100PX; -fx-border-color: white; -fx-border-radius: 100PX; -fx-border-width: 3PX;">
+         <children>
+            <Label layoutX="43.0" layoutY="18.0" text="Adding Hotel" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="530.0" layoutY="752.0" prefHeight="64.0" prefWidth="187.0" style="-fx-background-radius: 100PX; -fx-border-color: white; -fx-border-radius: 100PX; -fx-border-width: 3PX;">
+         <children>
+            <Label layoutX="19.0" layoutY="18.0" text="Adding Employees" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="805.0" layoutY="752.0" prefHeight="64.0" prefWidth="187.0" style="-fx-background-radius: 100PX; -fx-border-color: white; -fx-border-radius: 100PX; -fx-border-width: 3PX; -fx-background-color: #4e8197;">
+         <children>
+            <Label layoutX="34.0" layoutY="18.0" text="Adding Rooms" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="52.0" fitWidth="55.0" layoutX="451.0" layoutY="758.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/baseline_chevron_right_white_48dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="55.0" layoutX="738.0" layoutY="758.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/baseline_chevron_right_white_48dp.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
